@@ -9,7 +9,9 @@ Submission Files : Bureaucrat.hpp, Bureaucrat.cpp, Main.cpp, Makefile
 Parameters : -
 Return Value : the output of a sample main function is displayed at the stdout.
 A Bureaucrat must have:
+
 • A constant name.
+
 • And a grade that ranges from 1 (highest possible grade) to 150 (lowest possible grade). Any attempt to instantiate a Bureaucrat using an invalid grade must throw an exception: either a Bureaucrat::GradeTooHighException or a Bureaucrat::GradeTooLowException. Since grade 1 is the highest one and 150 the lowest, incrementing a grade 3 should give a grade 2 to the bureaucrat.   
 
 EXERCISE 01
@@ -23,24 +25,32 @@ Return Value : the output of a sample main function is displayed at the stdout.
 
 Form class, has:
 • A constant name.
+
 • A boolean indicating whether it is signed (at construction, it’s not).
+
 • A constant grade required to sign it.
+
 • And a constant grade required to execute it.
+
 All these attributes are private, not protected. The grades of the Form follow the same rules that apply to the Bureaucrat. Thus, the following exceptions will be thrown if a form grade is out of bounds: Form::GradeTooHighException and Form::GradeTooLowException.
 
 EXERCISE 02
 In this exercise I was required to transform the class Form into abstract and renamed it AForm.
 Furthermore I had to generate 3 concrete classes following on from class AForm. They were;
+
 • ShrubberyCreationForm: Required grades: sign 145, exec 137
 Create a file <target>_shrubbery in the working directory, and writes ASCII trees
 inside it.
+
 • RobotomyRequestForm: Required grades: sign 72, exec 45
 Makes some drilling noises. Then, informs that <target> has been robotomized successfully 50% of the time. Otherwise, informs that the robotomy failed.
+
 • PresidentialPardonForm: Required grades: sign 25, exec 5
 Informs that <target> has been pardoned by Zaphod Beeblebrox.
 
 All of them take only one parameter in their constructor: the target of the form. For
 example, "home" if you want to plant shrubbery at home.
+
 MANDATORY RULES
 Program Name : ex02
 Submission Files : Makefile, main.cpp, Bureaucrat.[{h, hpp},cpp], Bureaucrat.cpp + AForm.[{h, hpp},cpp], ShrubberyCreationForm.[{h, hpp},cpp], + RobotomyRequestForm.[{h, hpp},cpp], PresidentialPardonForm.[{h, hpp},cpp]
