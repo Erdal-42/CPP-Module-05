@@ -4,11 +4,17 @@ CPP Module 05 is a project where I have demonstrated my understanding and implem
 EXERCISE 00
 In line with the project requirement, I represented a “Bureaucrat” with a certain rating of his authority level. Exceptions were used to catch invalid cases of his attributes.
 MANDATORY RULES
+
 Program Name : ex00
+
 Submission Files : Bureaucrat.hpp, Bureaucrat.cpp, Main.cpp, Makefile
+
 Parameters : -
+
 Return Value : the output of a sample main function is displayed at the stdout.
+
 A Bureaucrat must have:
+
 
 • A constant name.
 
@@ -17,13 +23,18 @@ A Bureaucrat must have:
 EXERCISE 01
 The objects of Bureaucrat classes  in Exercise 00 above will be signing instances of class Form coded in this exercise.
 MANDATORY RULES
+
 Program Name : ex01
+
 Submission Files : Files from previous exercise + Form.{h, hpp}, Form.cpp
+
 Parameters : -
+
 Return Value : the output of a sample main function is displayed at the stdout.
 
 
 Form class, has:
+
 • A constant name.
 
 • A boolean indicating whether it is signed (at construction, it’s not).
@@ -52,9 +63,13 @@ All of them take only one parameter in their constructor: the target of the form
 example, "home" if you want to plant shrubbery at home.
 
 MANDATORY RULES
+
 Program Name : ex02
+
 Submission Files : Makefile, main.cpp, Bureaucrat.[{h, hpp},cpp], Bureaucrat.cpp + AForm.[{h, hpp},cpp], ShrubberyCreationForm.[{h, hpp},cpp], + RobotomyRequestForm.[{h, hpp},cpp], PresidentialPardonForm.[{h, hpp},cpp]
+
 Parameters : -
+
 Return Value : the output of a sample main function is displayed at the stdout.
 
 We are also required to write a member function in the abstract class AForm, execute(Bureaucrat const & executor) const that conducts the execution of a form. The function must check that the form was signed and that the grade of the bureaucrat attempting to execute the form is high enough. Otherwise, throw an appropriate exception.
@@ -62,8 +77,13 @@ Finally I added the  executeForm(Form const & form) member function to the Burea
 
 EXERCISE 03
 The purpose of this exercise was for me to implement an Intern class. The intern has no name, no grade, no unique characteristics. An object of the Intern Class is to fillout the form that is requested. For this I scripted the Intern Class member function makeForm() function that takes two strings; the first is the name of a form and the second is the target of the form. It return a pointer to a Form object (whose name is the one passed as parameter) whose target will be initialized to the second parameter. If the form name passed as parameter is non-existing, it prints an explicit error message.
+
 MANDATORY RULES
+
 Program Name : ex03
+
 Submission Files : Files from previous exercises + Intern.{h, hpp}, Intern.cpp
+
 Parameters : -
+
 Return Value : the output of a sample main function
