@@ -3,6 +3,7 @@ CPP Module 05 is a project where I have demonstrated my understanding and implem
 
 EXERCISE 00
 In line with the project requirement, I represented a “Bureaucrat” with a certain rating of his authority level. Exceptions were used to catch invalid cases of his attributes.
+
 MANDATORY RULES
 
 Program Name : ex00
@@ -22,6 +23,7 @@ A Bureaucrat must have:
 
 EXERCISE 01
 The objects of Bureaucrat classes  in Exercise 00 above will be signing instances of class Form coded in this exercise.
+
 MANDATORY RULES
 
 Program Name : ex01
