@@ -88,7 +88,7 @@ The intern has one important capacity: the makeForm() function. It takes two str
 
 It will print something like:
 
-```Intern creates `<form>` ```
+```Intern creates <form> ```
 
 If the form name passed as parameter doesn’t exist, print an explicit error message.
 
