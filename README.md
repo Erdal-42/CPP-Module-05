@@ -26,7 +26,7 @@ You will provide getters for both these attributes: getName() and getGrade(). Im
 You will implement an overload of the insertion («) operator to print something like
 (without the angle brackets):
 
-<name>, bureaucrat grade <grade>
+"<name>, bureaucrat grade <grade>"
 
 
 ---
