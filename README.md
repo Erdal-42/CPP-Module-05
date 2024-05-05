@@ -42,7 +42,8 @@ All these attributes are private, not protected.
 
 The grades of the Form follow the same rules that apply to the Bureaucrat. Thus, the following exceptions will be thrown if a form grade is out of bounds:
 
-```Form::GradeTooHighException and Form::GradeTooLowException```.
+```Form::GradeTooHighException``` and 
+```Form::GradeTooLowException```.
 
 Same as before, write getters for all attributes and an overload of the insertion («) operator that prints the form information.
 
@@ -74,7 +75,7 @@ Whether you want to check the requirements in every concrete class or in the bas
 
 member function to the Bureaucrat. It must attempt to execute the form. If it’s successful, print something like:
 
-```    `<bureaucrat>` executed `<form>`    ```
+```<bureaucrat> executed <form> ```
 
 If not, print an explicit error message.
 
