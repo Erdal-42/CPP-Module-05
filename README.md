@@ -14,16 +14,16 @@ grade).
 
 Any attempt to instantiate a Bureaucrat using an invalid grade must throw an exception:
 either a 
-‘’’
+
 Bureaucrat::GradeTooHighException or a Bureaucrat::GradeTooLowException.
-‘’’
+
 You will provide getters for both these attributes: getName() and getGrade(). Implement also two member functions to increment or decrement the bureaucrat grade. If the grade is out of range, both of them will throw the same exceptions as the constructor.
 
 You will implement an overload of the insertion («) operator to print something like
 (without the angle brackets):
-‘’’
+
 <name>, bureaucrat grade <grade>
-‘’’
+
 
 ---
 
@@ -39,9 +39,9 @@ Now that we have bureaucrats, lets assign them with completing forms. Let’s ma
 All these attributes are private, not protected.
 
 The grades of the Form follow the same rules that apply to the Bureaucrat. Thus, the following exceptions will be thrown if a form grade is out of bounds:
-‘’’
+
 Form::GradeTooHighException and Form::GradeTooLowException.
-‘’’
+
 Same as before, write getters for all attributes and an overload of the insertion («) operator that prints the form information.
 
 ---
@@ -86,7 +86,7 @@ The intern has one important capacity: the makeForm() function. It takes two str
 
 It will print something like:
 
-- Intern creates <form>
+Intern creates <form>
 
 If the form name passed as parameter doesn’t exist, print an explicit error message.
 
