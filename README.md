@@ -15,18 +15,16 @@ grade).
 Any attempt to instantiate a Bureaucrat using an invalid grade must throw an exception:
 either a 
 
-   Bureaucrat::GradeTooHighException 
-
+‘Bureaucrat::GradeTooHighException’
 or a 
-
-   Bureaucrat::GradeTooLowException.
+‘Bureaucrat::GradeTooLowException’.
 
 You will provide getters for both these attributes: getName() and getGrade(). Implement also two member functions to increment or decrement the bureaucrat grade. If the grade is out of range, both of them will throw the same exceptions as the constructor.
 
 You will implement an overload of the insertion («) operator to print something like
 (without the angle brackets):
 
-"<name>, bureaucrat grade <grade>"
+‘<name>, bureaucrat grade <grade>’
 
 
 ---
@@ -44,7 +42,7 @@ All these attributes are private, not protected.
 
 The grades of the Form follow the same rules that apply to the Bureaucrat. Thus, the following exceptions will be thrown if a form grade is out of bounds:
 
-Form::GradeTooHighException and Form::GradeTooLowException.
+‘Form::GradeTooHighException and Form::GradeTooLowException’.
 
 Same as before, write getters for all attributes and an overload of the insertion («) operator that prints the form information.
 
@@ -66,17 +64,17 @@ All of them take only one parameter in their constructor: the target of the form
 
 Now, add the 
 
-- execute(Bureaucrat const & executor) const
+‘execute(Bureaucrat const & executor) const’
 
 member function to the base form and implement a function to execute the form’s action of the concrete classes. You have to check that the form is signed and that the grade of the bureaucrat attempting to execute the form is high enough. Otherwise, throw an appropriate exception.
 
 Whether you want to check the requirements in every concrete class or in the base class (then call another function to execute the form) is up to you. Lastly, add the 
 
-- executeForm(Form const & form)
+‘executeForm(Form const & form)’
 
 member function to the Bureaucrat. It must attempt to execute the form. If it’s successful, print something like:
 
-<bureaucrat> executed <form>
+‘<bureaucrat> executed <form>’
 
 If not, print an explicit error message.
 
@@ -90,7 +88,7 @@ The intern has one important capacity: the makeForm() function. It takes two str
 
 It will print something like:
 
-Intern creates <form>
+‘Intern creates <form>’
 
 If the form name passed as parameter doesn’t exist, print an explicit error message.
 
