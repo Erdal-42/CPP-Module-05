@@ -15,7 +15,11 @@ grade).
 Any attempt to instantiate a Bureaucrat using an invalid grade must throw an exception:
 either a 
 
-Bureaucrat::GradeTooHighException or a Bureaucrat::GradeTooLowException.
+Bureaucrat::GradeTooHighException 
+
+or a 
+
+Bureaucrat::GradeTooLowException.
 
 You will provide getters for both these attributes: getName() and getGrade(). Implement also two member functions to increment or decrement the bureaucrat grade. If the grade is out of range, both of them will throw the same exceptions as the constructor.
 
